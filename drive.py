@@ -118,6 +118,8 @@ if __name__ == '__main__':
     if model_version != keras_version:
         print('You are using Keras version ', keras_version,
               ', but the model was built using ', model_version)
+    else:
+        print('Version matched!')
 
     model = load_model(args.model)
 
