@@ -1,0 +1,39 @@
+(/opt/carnd_p3/behavioral) root@b2fa2a3250b3:/home/workspace/CarND-Behavioral-Cloning-P3# python model.py
+Using TensorFlow backend.
+Train on 6428 samples, validate on 1608 samples
+Epoch 1/7
+2019-09-18 15:49:22.174619: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and c
+ould speed up CPU computations.
+2019-09-18 15:49:22.174670: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and c
+ould speed up CPU computations.
+2019-09-18 15:49:22.174683: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and coul
+d speed up CPU computations.
+2019-09-18 15:49:22.174692: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and cou
+ld speed up CPU computations.
+2019-09-18 15:49:22.174700: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and coul
+d speed up CPU computations.
+2019-09-18 15:49:22.282177: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, 
+so returning NUMA node zero
+2019-09-18 15:49:22.282980: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:04.0
+Total memory: 11.17GiB
+Free memory: 11.09GiB
+2019-09-18 15:49:22.283042: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2019-09-18 15:49:22.283083: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2019-09-18 15:49:22.283138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:04.0)
+6428/6428 [==============================] - 6s 935us/step - loss: 8464074.4501 - val_loss: 4182.5019
+Epoch 2/7
+6428/6428 [==============================] - 4s 556us/step - loss: 3463.6661 - val_loss: 3072.0139
+Epoch 3/7
+6428/6428 [==============================] - 3s 510us/step - loss: 2450.1377 - val_loss: 2146.3940
+Epoch 4/7
+6428/6428 [==============================] - 3s 499us/step - loss: 2197.2656 - val_loss: 1930.0721
+Epoch 5/7
+6428/6428 [==============================] - 3s 494us/step - loss: 2449.3581 - val_loss: 2347.2646
+Epoch 6/7
+6428/6428 [==============================] - 3s 514us/step - loss: 1951.1974 - val_loss: 4043.9832
+Epoch 7/7
+6428/6428 [==============================] - 3s 500us/step - loss: 1729.7388 - val_loss: 1346.2460
+(/opt/carnd_p3/behavioral) root@b2fa2a3250b3:/home/workspace/CarND-Behavioral-Cloning-P3# 
