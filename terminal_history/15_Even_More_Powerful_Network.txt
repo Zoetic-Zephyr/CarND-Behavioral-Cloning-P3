@@ -1,0 +1,37 @@
+(/opt/carnd_p3/behavioral) root@ff8d8348075f:/home/workspace/CarND-Behavioral-Cloning-P3# python model.py
+Using TensorFlow backend.
+model.py:60: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(24, (5, 5), activation="relu", strides=(2, 2))`
+  model.add(Convolution2D(24,5,5,subsample=(2,2),activation="relu"))
+model.py:61: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(36, (5, 5), activation="relu", strides=(2, 2))`
+  model.add(Convolution2D(36,5,5,subsample=(2,2),activation="relu"))
+model.py:62: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(48, (5, 5), activation="relu", strides=(2, 2))`
+  model.add(Convolution2D(48,5,5,subsample=(2,2),activation="relu"))
+model.py:63: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(64, (3, 3), activation="relu")`
+  model.add(Convolution2D(64,3,3,activation="relu"))
+model.py:64: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(64, (3, 3), activation="relu")`
+  model.add(Convolution2D(64,3,3,activation="relu"))
+Train on 38572 samples, validate on 9644 samples
+Epoch 1/3
+2019-09-19 15:19:01.928102: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instru
+ctions, but these are available on your machine and could speed up CPU computations.
+2019-09-19 15:19:01.928181: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instru
+ctions, but these are available on your machine and could speed up CPU computations.
+2019-09-19 15:19:01.928216: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructi
+ons, but these are available on your machine and could speed up CPU computations.
+2019-09-19 15:19:01.928244: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-09-19 15:19:01.928299: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2019-09-19 15:19:02.015596: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-19 15:19:02.016283: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:04.0
+Total memory: 11.17GiB
+Free memory: 11.09GiB
+2019-09-19 15:19:02.016343: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2019-09-19 15:19:02.016387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2019-09-19 15:19:02.016428: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:04.0)
+38572/38572 [==============================] - 44s 1ms/step - loss: 0.0175 - val_loss: 0.0187
+Epoch 2/3
+38572/38572 [==============================] - 42s 1ms/step - loss: 0.0147 - val_loss: 0.0192
+Epoch 3/3
+38572/38572 [==============================] - 43s 1ms/step - loss: 0.0134 - val_loss: 0.0184
