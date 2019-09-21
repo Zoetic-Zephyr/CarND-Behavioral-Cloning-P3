@@ -17,13 +17,8 @@ The goals / steps of this project are the following:
 [//]: # "Image References"
 
 [image1]: ./writeup_images/nn.png "Model Visualization"
-[image2]: ./writeup_images/placeholder.png "Grayscaling"
-[image3]: ./writeup_images/placeholder_small.png "Recovery Image"
-[image4]: ./writeup_images/placeholder_small.png "Recovery Image"
-[image5]: ./writeup_images/placeholder_small.png "Recovery Image"
-[image6]: ./writeup_images/placeholder_small.png "Normal Image"
-[image7]: ./writeup_images/placeholder_small.png "Flipped Image"
-
+[image2]: ./writeup_images/normal.png "Normal Image"
+[image3]: ./writeup_images/flipped.png "Flipped Image"
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
@@ -88,6 +83,12 @@ The final data set used in training and validation consists of:
 | inverted_right  | inverted_right  |
 
 
+
+And below are the image data before and after np.fliplr():
+
+![alt text][image2]
+
+![alt text][image3]
 
 For details about how I created the training data, see the next section. 
 

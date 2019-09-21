@@ -29,11 +29,11 @@ for line in lines:
         images.append(image)
 
         steering_angle = float()
-        if i == 0:
+        if i == 0: # * center
             steering_angle = steering_center
-        elif i == 1:
+        elif i == 1: # * left
             steering_angle = steering_center + correction
-        elif i == 2:
+        elif i == 2: # * right
             steering_angle = steering_center - correction
         measurements.append(steering_angle)
 
